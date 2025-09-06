@@ -13,13 +13,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Devices.PIXEL_8
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import xevidev.dev.financeapp.composables.FloatingButton
 
 @Composable
 fun HomeScreen(modifier: Modifier) {
     val context = LocalContext.current
-    Box(modifier = modifier) {
+    Box(modifier = modifier.padding(10.dp)) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(60) { item ->
                 Text("Itemaasdfasdsf")
@@ -31,4 +33,10 @@ fun HomeScreen(modifier: Modifier) {
                 .padding(16.dp)
         ) { Toast.makeText(context, "TEETEST", Toast.LENGTH_LONG).show() }
     }
+}
+
+@Preview(showBackground = true, device = PIXEL_8, showSystemUi = true)
+@Composable
+fun HomeScreenPreview() {
+    HomeScreen(Modifier)
 }
