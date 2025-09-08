@@ -24,7 +24,7 @@ fun HomeScreen(modifier: Modifier) {
     Box(modifier = modifier.padding(10.dp)) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(60) { item ->
-                Text("Itemaasdfasdsf")
+                Text("Teset")
             }
         }
         FloatingButton(
