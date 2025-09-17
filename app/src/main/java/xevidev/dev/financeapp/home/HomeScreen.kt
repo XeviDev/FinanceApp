@@ -17,14 +17,15 @@ import androidx.compose.ui.tooling.preview.Devices.PIXEL_8
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import xevidev.dev.financeapp.composables.FloatingButton
+import xevidev.dev.financeapp.composables.GeneralExpensesElementScreen
 
 @Composable
 fun HomeScreen(modifier: Modifier) {
     val context = LocalContext.current
     Box(modifier = modifier.padding(10.dp)) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
-            items(60) { item ->
-                Text("Teset")
+            items(10) { item ->
+                GeneralExpensesElementScreen()
             }
         }
         FloatingButton(
