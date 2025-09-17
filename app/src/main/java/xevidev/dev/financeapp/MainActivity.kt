@@ -20,6 +20,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     HomeScreen(
                         modifier = Modifier.padding(innerPadding)
+
                     )
                 }
             }
